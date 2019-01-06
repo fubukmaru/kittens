@@ -112,7 +112,7 @@ class kittenBot
     {
         autoHunt = setInterval(function() 
         {
-            var catpower = gamePage.resPool.get('manpower');
+            var catpower = gamePage.resPool.get('catpower');
             if (catpower.value / catpower.maxValue > 0.95) 
             {
                 $("a:contains('Send hunters')").click();
