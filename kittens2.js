@@ -74,7 +74,7 @@ class kittenBot
     {
         if(arguments.length>=1)
         {
-            var length = 5000;
+            var length = 1000;
             for (var i = arguments.length - 1; i >= 0; i--) 
             {
                 if(arguments[i]==30)
@@ -138,11 +138,11 @@ class kittenBot
                 var curRes = gamePage.resPool.get(resources[i][0]);
                 if (curRes.value / curRes.maxValue > 0.95 && gamePage.workshop.getCraft(resources[i][1]).unlocked) 
                 {
-                    gamePage.craft(resources[i][1],10);
-                    gamePage.craft(resources[i][1],10);
-                    gamePage.craft(resources[i][1],10);
-                    gamePage.craft(resources[i][1],10);
-                    gamePage.craft(resources[i][1],10);
+                    gamePage.craftAll(resources[i][1],10);
+                    gamePage.craftAll(resources[i][1],10);
+                    gamePage.craftAll(resources[i][1],10);
+                    gamePage.craftAll(resources[i][1],10);
+                    gamePage.craftAll(resources[i][1],10);
                 }
             }
             if(gamePage.resPool.get('slab').value > 120000 && gamePage.resPool.get('concrete').unlocked)
@@ -152,7 +152,7 @@ class kittenBot
             var steel = gamePage.resPool.get('steel');
             var coal = gamePage.resPool.get('coal');
             if(titan.value/titan.maxValue>0.95 && steel.value/coal.maxValue>0.1 && gamePage.resPool.get('alloy').unlocked)
-              gamePage.craft(gamePage.resPool.get('alloy'),10);
+              gamePage.craftAll(gamePage.resPool.get('alloy'),10);
         }, 2 * 1000);
     }
         
