@@ -74,7 +74,7 @@ class kittenBot
     {
         if(arguments.length>=1)
         {
-            var length = 1000;
+            var length = 5000;
             for (var i = arguments.length - 1; i >= 0; i--) 
             {
                 if(arguments[i]==30)
