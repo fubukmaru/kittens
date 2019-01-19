@@ -143,10 +143,8 @@ class kittenBot
                     gamePage.craftAll(resources[i][1],10);
                     gamePage.craftAll(resources[i][1],10);
                     gamePage.craftAll(resources[i][1],10);
-		gamePage.workshop.getCraft('slab').unlocked)
-                    blueprint = setInterval(function(){gamePage.craftAll('slab');},length);
-		gamePage.workshop.getCraft('beam').unlocked)
-                    blueprint = setInterval(function(){gamePage.craftAll('beam');},length);
+		gamePage.craftAll('slab');
+		gamePage.craftAll('beam');
                 }
             }
             if(gamePage.resPool.get('slab').value > 120000 && gamePage.resPool.get('concrete').unlocked)
