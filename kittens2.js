@@ -138,13 +138,26 @@ class kittenBot
                 var curRes = gamePage.resPool.get(resources[i][0]);
                 if (curRes.value / curRes.maxValue > 0.95 && gamePage.workshop.getCraft(resources[i][1]).unlocked) 
                 {
-                    gamePage.craftAll(resources[i][1],10);
-                    gamePage.craftAll(resources[i][1],10);
-                    gamePage.craftAll(resources[i][1],10);
-                    gamePage.craftAll(resources[i][1],10);
-                    gamePage.craftAll(resources[i][1],10);
-		gamePage.craftAll('slab');
-		gamePage.craftAll('beam');
+                    gamePage.craft(resources[i][1],10);
+                    gamePage.craft(resources[i][1],10);
+                    gamePage.craft(resources[i][1],10);
+                    gamePage.craft(resources[i][1],10);
+                    gamePage.craft(resources[i][1],10);
+		    gamePage.craft(resources[i][1],10);
+                    gamePage.craft(resources[i][1],10);
+                    gamePage.craft(resources[i][1],10);
+                    gamePage.craft(resources[i][1],10);
+                    gamePage.craft(resources[i][1],10);
+		    gamePage.craft(resources[i][1],10);
+                    gamePage.craft(resources[i][1],10);
+                    gamePage.craft(resources[i][1],10);
+                    gamePage.craft(resources[i][1],10);
+                    gamePage.craft(resources[i][1],10);
+                    gamePage.craft(resources[i][1],10);
+                    gamePage.craft(resources[i][1],10);
+                    gamePage.craft(resources[i][1],10);
+                    gamePage.craft(resources[i][1],10);
+                    gamePage.craft(resources[i][1],10);
                 }
             }
             if(gamePage.resPool.get('slab').value > 120000 && gamePage.resPool.get('concrete').unlocked)
