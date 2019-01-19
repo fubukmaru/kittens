@@ -143,9 +143,9 @@ class kittenBot
                     gamePage.craft(resources[i][1],10);
                     gamePage.craft(resources[i][1],10);
 			if (gamePage.resPool.get('minerals').value / gamePage.resPool.get('minerals').maxValue > 0.95) {
-                    gamePage.craftAll('slab');};
+                    gamePage.craftAll('slab');},length);
 			(gamePage.resPool.get('wood').value / gamePage.resPool.get('wood').maxValue > 0.95) {
-		    gamePage.craftAll('beam');};
+		    gamePage.craftAll('beam');},length);
                 }
             }
             if(gamePage.resPool.get('slab').value > 120000 && gamePage.resPool.get('concrete').unlocked)
