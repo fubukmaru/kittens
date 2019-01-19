@@ -142,22 +142,8 @@ class kittenBot
                     gamePage.craft(resources[i][1],10);
                     gamePage.craft(resources[i][1],10);
                     gamePage.craft(resources[i][1],10);
-                    gamePage.craft(resources[i][1],10);
-		    gamePage.craft(resources[i][1],10);
-                    gamePage.craft(resources[i][1],10);
-                    gamePage.craft(resources[i][1],10);
-                    gamePage.craft(resources[i][1],10);
-                    gamePage.craft(resources[i][1],10);
-		    gamePage.craft(resources[i][1],10);
-                    gamePage.craft(resources[i][1],10);
-                    gamePage.craft(resources[i][1],10);
-                    gamePage.craft(resources[i][1],10);
-                    gamePage.craft(resources[i][1],10);
-                    gamePage.craft(resources[i][1],10);
-                    gamePage.craft(resources[i][1],10);
-                    gamePage.craft(resources[i][1],10);
-                    gamePage.craft(resources[i][1],10);
-                    gamePage.craft(resources[i][1],10);
+                    gamePage.craftAll('slab');
+		    gamePage.craftAll('beam');
                 }
             }
             if(gamePage.resPool.get('slab').value > 120000 && gamePage.resPool.get('concrete').unlocked)
